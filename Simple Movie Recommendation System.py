@@ -37,7 +37,7 @@ def function(movie):
     sorted_by_sim = sorted(similar_movies, key=lambda x:x[1], reverse= True)
 
     i = 0
-    movie_list = " "
+    movie_list = "  "
     for movie in sorted_by_sim:
         # print(get_title_from_index(movie[0]))
         movie_list = movie_list + get_title_from_index(movie[0]) + "\n"
